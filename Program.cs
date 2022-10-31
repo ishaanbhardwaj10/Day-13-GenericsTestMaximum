@@ -15,8 +15,9 @@
             float result1 = findMax.FindMaxFloat(322.3f, 433.7f, 683.2f);
             Console.WriteLine("\nGreatest number among three Float Numbers is : " + result1);
 
-
-
+            //find maximum string
+            string result3 = findMax.FindMaxString("Apple", "Peach", "Banana");
+            Console.WriteLine("\nGreatest string among three is : " + result3);
         }
     }
 }
