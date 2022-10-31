@@ -5,19 +5,21 @@
         public static void Main(string[] args)
         {
 
-            FindMax findMax = new FindMax();
-
             //maximum integer
-            int result = findMax.FindMaxAll(15, 100, 5);
-            Console.WriteLine("\nGreatest number among three numbers is : " + result);
+            FindMax<int> obj = new FindMax<int>(22, 54, 62);
+            int result = obj.FindMaxShow();
+            Console.WriteLine("Greatest number among three numbers is :  " + result);
 
             //maximum float
-            float result1 = findMax.FindMaxAll(322.3f, 433.7f, 683.2f);
-            Console.WriteLine("\nGreatest number among three Float Numbers is : " + result1);
+            FindMax<float> objf = new FindMax<float>(22.6f, 22.8f, 22.6f);
+            float resultf = objf.FindMaxShow();
+            Console.WriteLine("Greatest number among three float number is :  " + resultf);
 
             //find maximum string
-            string result3 = findMax.FindMaxAll("Apple", "Banana", "Peach");
-            Console.WriteLine("\nGreatest string among three is : " + result3);
+            FindMax<string> objs = new FindMax<string>("Apple", "Peach", "Banana");
+            string results = objs.FindMaxShow();
+            Console.WriteLine("Greatest string among three string is :  " + results);
+
         }
     }
 }
